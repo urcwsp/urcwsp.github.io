@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shaopu Wang — Robotics, Deep Reinforcement Learning, Adversarial Learning, Autonomous Driving, and Embodied AI.">
+  <meta name="author" content="Shaopu Wang">
+  <title>Shaopu Wang | Robotics & Reinforcement Learning</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="#home">SW</a>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <nav class="nav" id="nav">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">ROBOTICS · DEEP REINFORCEMENT LEARNING · AUTONOMOUS DRIVING</p>
+        <h1>Shaopu Wang</h1>
+        <p class="hero-role">Master's Student in Robotics</p>
+        <p class="hero-school">School of Mechanical Engineering · Tianjin University of Technology</p>
+        <p class="hero-summary">
+          I work on robust decision-making and control under uncertainty, with a focus on
+          deep reinforcement learning, multi-agent adversarial learning, autonomous driving,
+          and embodied AI.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-dark" href="#publications"><i class="fa-solid fa-book-open"></i> Publications</a>
+          <a class="btn btn-light" href="cv.pdf" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> CV</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:urcwsp@stud.tjut.edu.cn" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-side">
+        <div class="profile-frame">
+          <img src="images/profile.svg" alt="Shaopu Wang profile placeholder">
+        </div>
+        <div class="profile-caption">
+          <span>天津理工大学</span>
+          <span>Robotics · RL · Robust Control</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-no">01</span>
+        <h2>About</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>
+            I am currently pursuing a Master's degree in Robotics at the School of Mechanical
+            Engineering, Tianjin University of Technology.
+          </p>
+          <p>
+            My research centers on <strong>Deep Reinforcement Learning</strong>,
+            <strong>Multi-Agent Adversarial Learning</strong>, robust decision-making in
+            complex unstructured environments and dynamic disturbances, and
+            <strong>Embodied AI &amp; Sim-to-Real</strong>.
+          </p>
+          <p>
+            At the algorithmic level, I study problems including dimensional collapse under
+            multi-policy adversarial training, variance-adaptive estimation, and regularization
+            of continuous action manifolds.
+          </p>
+        </div>
+        <aside class="focus-box">
+          <p class="focus-label">CURRENT FOCUS</p>
+          <ul>
+            <li>Robust Autonomous Driving</li>
+            <li>Adversarial Reinforcement Learning</li>
+            <li>Policy Diversity &amp; Adaptive Regulation</li>
+            <li>Embodied AI Teleoperation</li>
+            <li>Sim-to-Real Learning</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft" id="research">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-no">02</span>
+        <h2>Research</h2>
+      </div>
+      <div class="research-grid">
+        <article class="research-card">
+          <div class="research-icon"><i class="fa-solid fa-car-side"></i></div>
+          <h3>Robust Autonomous Driving</h3>
+          <p>Robust control and decision-making for autonomous driving under dynamic perturbations and uncertain vehicle dynamics.</p>
+          <div class="tags"><span>MetaDrive</span><span>Robust RL</span><span>Control</span></div>
+        </article>
+        <article class="research-card">
+          <div class="research-icon"><i class="fa-solid fa-shuffle"></i></div>
+          <h3>Adversarial Reinforcement Learning</h3>
+          <p>Multi-agent adversarial training for discovering challenging conditions while maintaining effective protagonist policies.</p>
+          <div class="tags"><span>MARL</span><span>Adversarial RL</span><span>PPO</span></div>
+        </article>
+        <article class="research-card">
+          <div class="research-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Policy Diversity &amp; Adaptive Regulation</h3>
+          <p>Diversity-aware regularization and adaptive regulation to reduce policy collapse and improve exploration in continuous action spaces.</p>
+          <div class="tags"><span>Policy Diversity</span><span>Adaptive Regulation</span><span>Deep RL</span></div>
+        </article>
+        <article class="research-card">
+          <div class="research-icon"><i class="fa-solid fa-hand"></i></div>
+          <h3>Embodied AI &amp; Teleoperation</h3>
+          <p>Immersive master–slave teleoperation, motion retargeting, multimodal demonstration collection, and foundations for imitation learning.</p>
+          <div class="tags"><span>Teleoperation</span><span>Retargeting</span><span>Sim-to-Real</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="publications">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-no">03</span>
+        <h2>Publications</h2>
+      </div>
+
+      <div class="pub-list">
+        <article class="pub-card">
+          <div class="pub-visual">
+            <img src="images/paper1.svg" alt="Illustration for Hierarchical multi-policy adversarial reinforcement learning">
+          </div>
+          <div class="pub-body">
+            <p class="pub-type">PUBLISHED JOURNAL PAPER · 2026</p>
+            <h3>Hierarchical multi-policy adversarial reinforcement learning.</h3>
+            <p class="authors">Xiaofeng Wang, <strong>Shaopu Wang</strong>, Jipeng Zhang*, Yue Ma.</p>
+            <p class="venue"><em>Engineering Applications of Artificial Intelligence</em>, Vol. 181, 2026.</p>
+            <div class="pub-tags"><span>CAS Q1 Top</span><span>JCR Q1</span></div>
+            <div class="pub-actions">
+              <a class="pub-btn" href="#" onclick="return disabledLink(event)">PDF</a>
+              <a class="pub-btn" href="#" onclick="return disabledLink(event)">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub-card">
+          <div class="pub-visual">
+            <img src="images/paper2.svg" alt="Illustration for sensory attacks and adversarial dynamics manuscript">
+          </div>
+          <div class="pub-body">
+            <p class="pub-type">MANUSCRIPT UNDER REVIEW · 2026</p>
+            <h3>Securing Autonomous Driving Against Compound Sensory Attacks and Adversarial Dynamics: A Variance-Adaptive and Diversity-Regularized Defense Framework.</h3>
+            <p class="authors">Xiaofeng Wang, <strong>Shaopu Wang</strong>, Jipeng Zhang*.</p>
+            <p class="venue">Under Review in <em>IEEE Transactions on Information Forensics and Security (TIFS)</em>, 2026.</p>
+            <div class="pub-tags"><span>CCF A</span><span>CAS Q1 Top</span></div>
+            <div class="pub-actions">
+              <a class="pub-btn" href="#" onclick="return disabledLink(event)">PDF</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub-card">
+          <div class="pub-visual">
+            <img src="images/paper3.svg" alt="Illustration for adaptive diversity-enhanced adversarial reinforcement learning manuscript">
+          </div>
+          <div class="pub-body">
+            <p class="pub-type">MANUSCRIPT UNDER REVIEW · 2026</p>
+            <h3>Adaptive Diversity-Enhanced Adversarial Reinforcement Learning for Robust Autonomous Driving.</h3>
+            <p class="authors">Xiaofeng Wang, <strong>Shaopu Wang</strong>, Jipeng Zhang*.</p>
+            <p class="venue">Under Review in Elsevier Journal, 2026.</p>
+            <div class="pub-tags"><span>SCI Core</span></div>
+            <div class="pub-actions">
+              <a class="pub-btn" href="#" onclick="return disabledLink(event)">Preprint</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub-card">
+          <div class="pub-visual">
+            <img src="images/paper4.svg" alt="Illustration for diversity-guided adversarial reinforcement learning manuscript">
+          </div>
+          <div class="pub-body">
+            <p class="pub-type">MANUSCRIPT UNDER REVIEW · 2026</p>
+            <h3>Diversity-Guided Adversarial Reinforcement Learning with Expert Routing and Recovery for Robust Autonomous Driving.</h3>
+            <p class="authors">Xiaofeng Wang, <strong>Shaopu Wang</strong>, Jipeng Zhang*.</p>
+            <p class="venue">Under Review in Elsevier Journal, 2026.</p>
+            <div class="pub-tags"><span>SCI Core</span></div>
+            <div class="pub-actions">
+              <a class="pub-btn" href="#" onclick="return disabledLink(event)">Preprint</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p class="publication-note">
+        Links marked with <strong>#</strong> are placeholders. Replace them with the actual paper,
+        code, or preprint URLs when available.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-soft" id="projects">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-no">04</span>
+        <h2>Key Projects</h2>
+      </div>
+
+      <article class="project-feature">
+        <div class="project-number">01</div>
+        <div>
+          <p class="project-kicker">EMBODIED AI · TELEOPERATION · PROJECT INITIAL STAGE</p>
+          <h3>Dual-Arm Force-Controlled Manipulators &amp; Multi-Finger Dexterous Hand Teleoperation</h3>
+          <p class="project-summary">
+            Core algorithm development and system construction for an immersive master–slave
+            teleoperation platform designed to collect high-quality demonstrations for imitation learning.
+          </p>
+          <div class="project-points">
+            <div>
+              <h4>Immersive Master–Slave Platform</h4>
+              <p>VR spatial pose tracking and force-feedback exoskeleton gloves for high-frequency closed-loop mapping to dual-arm 7-DOF force-controlled manipulators and a multi-finger dexterous hand.</p>
+            </div>
+            <div>
+              <h4>Human–Robot Motion Retargeting</h4>
+              <p>Continuous kinematic mapping from human hand skeleton degrees of freedom to a high-dimensional heterogeneous dexterous hand, with end-effector pose solving and fingertip coordination.</p>
+            </div>
+            <div>
+              <h4>Multimodal Demonstration Data</h4>
+              <p>Synchronized RGB-D, tactile/force feedback, joint velocity, and torque recording and cleaning for flexible assembly and unstructured grasping demonstrations.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-no">05</span>
+        <h2>Education</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-degree">Master of Science</div>
+          <div class="timeline-main">
+            <h3>Tianjin University of Technology</h3>
+            <p>Robotics · School of Mechanical Engineering</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-degree">Bachelor of Science</div>
+          <div class="timeline-main">
+            <h3>Tianjin University of Technology</h3>
+            <p>Robotics Engineering</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft" id="skills">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-no">06</span>
+        <h2>Technical Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Algorithms &amp; Theory</h3>
+          <p>Deep Reinforcement Learning · PPO · SAC · DDPG · DQN · Multi-Agent Adversarial Learning · Mixture-of-Experts · Embodied AI Teleoperation</p>
+        </div>
+        <div class="skill-card">
+          <h3>Programming &amp; Tools</h3>
+          <p>Python · PyTorch · C/C++ · OpenCV · NumPy · Linux · macOS · Git · LaTeX (Texifier)</p>
+        </div>
+        <div class="skill-card">
+          <h3>Simulation Platforms</h3>
+          <p>MetaDrive closed-loop driving platform · MuJoCo physics engine · Autonomous driving simulation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-no">07</span>
+        <h2>Contact</h2>
+      </div>
+      <div class="contact-box">
+        <div>
+          <p class="contact-lead">Interested in research collaboration, robotics, reinforcement learning, or autonomous driving?</p>
+          <p class="contact-sub">Feel free to get in touch.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:urcwsp@stud.tjut.edu.cn"><i class="fa-regular fa-envelope"></i> urcwsp@stud.tjut.edu.cn</a>
+          <a href="https://github.com/" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub Profile</a>
+          <a href="cv.pdf" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> Curriculum Vitae</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Shaopu Wang · Tianjin University of Technology</p>
+</footer>
+</body>
+</html>
