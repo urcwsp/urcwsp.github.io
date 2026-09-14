@@ -1,57 +1,150 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Shaopu Wang</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Shaopu Wang - Robotics, Reinforcement Learning and Autonomous Driving">
+
+    <meta name="author" content="Shaopu Wang">
+
+    <title>Shaopu Wang | Robotics & Reinforcement Learning</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@500;600;700&display=swap"
+          rel="stylesheet">
 </head>
+
 
 <body>
 
-<header>
-    <div class="container">
-        <h1>Shaopu Wang</h1>
-        <p>Robotics · Reinforcement Learning · Autonomous Driving</p>
+<!-- ================= NAVIGATION ================= -->
 
-        <nav>
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="#home" class="logo">
+            SW
+        </a>
+
+        <nav id="nav-menu">
+
             <a href="#about">About</a>
             <a href="#research">Research</a>
             <a href="#publications">Publications</a>
             <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
             <a href="#contact">Contact</a>
+
         </nav>
+
+        <button class="menu-button" id="menu-button">
+            <i class="fas fa-bars"></i>
+        </button>
+
     </div>
+
 </header>
 
 
-<main class="container">
+<!-- ================= HERO ================= -->
 
-<section id="about">
+<section id="home" class="hero">
 
-    <h2>About Me</h2>
+    <div class="hero-container">
 
-    <div class="about">
+        <div class="hero-text">
 
-        <img src="images/shaopuwang.jpg" alt="Shaopu Wang">
+            <p class="small-title">
+                ROBOTICS · REINFORCEMENT LEARNING · AUTONOMOUS DRIVING
+            </p>
 
-        <div>
-            <p>
+            <h1>
+                Shaopu Wang
+            </h1>
+
+            <h2>
+                Master's Student in Robotics
+            </h2>
+
+            <p class="hero-description">
+
                 I am a Master's student in Robotics at
                 Tianjin University of Technology.
+
+                My research focuses on reinforcement learning,
+                robust control, adversarial learning, and
+                autonomous driving.
+
             </p>
 
-            <p>
-                My research interests include reinforcement learning,
-                robust control, and autonomous driving.
-            </p>
+            <div class="hero-buttons">
 
-            <p>
-                I am currently working on robust and adversarial
-                reinforcement learning for autonomous driving.
-            </p>
+                <a href="#research" class="button primary">
+                    <i class="fas fa-flask"></i>
+                    Research
+                </a>
+
+                <a href="cv.pdf"
+                   class="button secondary"
+                   target="_blank">
+
+                    <i class="fas fa-file-pdf"></i>
+                    CV
+
+                </a>
+
+            </div>
+
+            <div class="social-links">
+
+                <a href="https://github.com/urcwsp"
+                   target="_blank"
+                   aria-label="GitHub">
+
+                    <i class="fab fa-github"></i>
+
+                </a>
+
+                <a href="#contact"
+                   aria-label="Email">
+
+                    <i class="fas fa-envelope"></i>
+
+                </a>
+
+                <a href="#publications"
+                   aria-label="Publications">
+
+                    <i class="fas fa-book"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-photo">
+
+            <img src="images/shaopuwang.jpg"
+                 alt="Shaopu Wang">
+
         </div>
 
     </div>
@@ -59,100 +152,711 @@
 </section>
 
 
-<section id="research">
+<!-- ================= ABOUT ================= -->
 
-    <h2>Research</h2>
+<section id="about" class="section">
 
-    <div class="card">
+    <div class="container">
 
-        <h3>Robust Reinforcement Learning for Autonomous Driving</h3>
+        <div class="section-title">
 
-        <p>
-            Developing adaptive adversarial reinforcement learning
-            methods for robust autonomous driving under dynamic
-            disturbances and model uncertainty.
-        </p>
+            <span>01</span>
 
-        <p class="tags">
-            Reinforcement Learning · MetaDrive · Robust Control
-        </p>
+            <h2>About Me</h2>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <p>
+
+                    I am currently pursuing a Master's degree
+                    in Robotics at the School of Mechanical
+                    Engineering, Tianjin University of Technology.
+
+                </p>
+
+                <p>
+
+                    My research interests lie at the intersection
+                    of reinforcement learning and autonomous driving,
+                    with a particular focus on robust decision-making
+                    and control under uncertainty.
+
+                </p>
+
+                <p>
+
+                    My current work investigates adversarial
+                    reinforcement learning methods for improving
+                    the robustness and safety of autonomous driving
+                    systems under dynamic disturbances and model
+                    uncertainty.
+
+                </p>
+
+            </div>
+
+
+            <div class="research-interests">
+
+                <h3>Research Interests</h3>
+
+                <div class="interest-list">
+
+                    <span>
+                        Reinforcement Learning
+                    </span>
+
+                    <span>
+                        Autonomous Driving
+                    </span>
+
+                    <span>
+                        Robust Control
+                    </span>
+
+                    <span>
+                        Adversarial RL
+                    </span>
+
+                    <span>
+                        Deep Learning
+                    </span>
+
+                    <span>
+                        Robotics
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
 </section>
 
 
-<section id="publications">
+<!-- ================= RESEARCH ================= -->
 
-    <h2>Publications</h2>
+<section id="research" class="section gray-section">
 
-    <div class="paper">
+    <div class="container">
 
-        <h3>
-            Adaptive Diversity-Enhanced Adversarial Reinforcement
-            Learning for Robust Autonomous Driving
-        </h3>
+        <div class="section-title">
 
-        <p>
-            Shaopu Wang, et al.
-        </p>
+            <span>02</span>
 
-        <p>
-            Reinforcement Learning · Autonomous Driving · Robust Control
-        </p>
+            <h2>Research</h2>
 
-        <a href="#">Paper</a>
-        <a href="#">Code</a>
+        </div>
+
+
+        <div class="research-card">
+
+            <div class="research-number">
+                01
+            </div>
+
+            <div>
+
+                <h3>
+                    Robust Reinforcement Learning
+                    for Autonomous Driving
+                </h3>
+
+                <p>
+
+                    Developing robust reinforcement learning
+                    algorithms for autonomous driving under
+                    dynamic disturbances, model uncertainty,
+                    and varying vehicle dynamics.
+
+                </p>
+
+                <div class="tags">
+
+                    <span>Reinforcement Learning</span>
+                    <span>Robust Control</span>
+                    <span>MetaDrive</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="research-card">
+
+            <div class="research-number">
+                02
+            </div>
+
+            <div>
+
+                <h3>
+                    Adversarial Reinforcement Learning
+                </h3>
+
+                <p>
+
+                    Investigating adaptive adversarial policies
+                    to discover challenging environmental
+                    conditions and improve the robustness of
+                    the protagonist policy.
+
+                </p>
+
+                <div class="tags">
+
+                    <span>Adversarial RL</span>
+                    <span>Multi-Agent Learning</span>
+                    <span>Robustness</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="research-card">
+
+            <div class="research-number">
+                03
+            </div>
+
+            <div>
+
+                <h3>
+                    Diversity-Enhanced Policy Learning
+                </h3>
+
+                <p>
+
+                    Exploring policy diversity and adaptive
+                    regularization mechanisms to prevent
+                    adversarial policy collapse and improve
+                    exploration in challenging environments.
+
+                </p>
+
+                <div class="tags">
+
+                    <span>Policy Diversity</span>
+                    <span>Adaptive Regulation</span>
+                    <span>Deep RL</span>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
 </section>
 
 
-<section id="projects">
+<!-- ================= PUBLICATIONS ================= -->
 
-    <h2>Projects</h2>
+<section id="publications" class="section">
 
-    <div class="card">
+    <div class="container">
 
-        <h3>Autonomous Driving with MetaDrive</h3>
+        <div class="section-title">
 
-        <p>
-            Robust autonomous driving using adversarial
-            reinforcement learning and dynamic environment
-            randomization.
-        </p>
+            <span>03</span>
 
-        <a href="#">GitHub</a>
+            <h2>Publications</h2>
+
+        </div>
+
+
+        <article class="publication">
+
+            <div class="publication-year">
+                2026
+            </div>
+
+            <div class="publication-content">
+
+                <h3>
+
+                    Adaptive Diversity-Enhanced
+                    Adversarial Reinforcement Learning
+                    for Robust Autonomous Driving
+
+                </h3>
+
+                <p class="authors">
+
+                    <strong>Shaopu Wang</strong>,
+                    et al.
+
+                </p>
+
+                <p>
+
+                    This work proposes an adaptive
+                    diversity-enhanced adversarial reinforcement
+                    learning framework for robust autonomous
+                    driving under dynamic disturbances and
+                    uncertain vehicle dynamics.
+
+                </p>
+
+                <div class="publication-links">
+
+                    <a href="#" class="text-link">
+                        <i class="fas fa-file-pdf"></i>
+                        Paper
+                    </a>
+
+                    <a href="#" class="text-link">
+                        <i class="fab fa-github"></i>
+                        Code
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 添加第二篇论文时复制下面结构 -->
+
+        <!--
+
+        <article class="publication">
+
+            <div class="publication-year">
+                2026
+            </div>
+
+            <div class="publication-content">
+
+                <h3>
+                    Your Paper Title
+                </h3>
+
+                <p class="authors">
+                    Shaopu Wang, et al.
+                </p>
+
+                <p>
+                    Paper description.
+                </p>
+
+                <div class="publication-links">
+
+                    <a href="#" class="text-link">
+                        Paper
+                    </a>
+
+                    <a href="#" class="text-link">
+                        Code
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        -->
 
     </div>
 
 </section>
 
 
-<section id="contact">
+<!-- ================= PROJECTS ================= -->
 
-    <h2>Contact</h2>
+<section id="projects" class="section gray-section">
 
-    <p>
-        GitHub:
-        <a href="https://github.com/">GitHub Profile</a>
-    </p>
+    <div class="container">
 
-    <p>
-        Email: your-email@example.com
-    </p>
+        <div class="section-title">
+
+            <span>04</span>
+
+            <h2>Projects</h2>
+
+        </div>
+
+
+        <div class="project-grid">
+
+
+            <div class="project-card">
+
+                <div class="project-icon">
+
+                    <i class="fas fa-car"></i>
+
+                </div>
+
+                <h3>
+                    Robust Autonomous Driving
+                </h3>
+
+                <p>
+
+                    Robust autonomous driving based on
+                    adversarial reinforcement learning in
+                    MetaDrive.
+
+                </p>
+
+                <div class="tags">
+
+                    <span>Python</span>
+                    <span>PyTorch</span>
+                    <span>MetaDrive</span>
+                    <span>PPO</span>
+
+                </div>
+
+                <a href="#"
+                   class="project-link">
+
+                    View Project
+                    <i class="fas fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-icon">
+
+                    <i class="fas fa-brain"></i>
+
+                </div>
+
+                <h3>
+                    Adversarial Reinforcement Learning
+                </h3>
+
+                <p>
+
+                    Multi-adversary reinforcement learning
+                    framework for discovering difficult
+                    driving scenarios.
+
+                </p>
+
+                <div class="tags">
+
+                    <span>Deep RL</span>
+                    <span>Adversarial Learning</span>
+                    <span>PPO</span>
+
+                </div>
+
+                <a href="#"
+                   class="project-link">
+
+                    View Project
+                    <i class="fas fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-icon">
+
+                    <i class="fas fa-robot"></i>
+
+                </div>
+
+                <h3>
+                    Robotics & Control
+                </h3>
+
+                <p>
+
+                    Research and implementation of
+                    reinforcement learning and intelligent
+                    control algorithms for robotic systems.
+
+                </p>
+
+                <div class="tags">
+
+                    <span>Robotics</span>
+                    <span>Control</span>
+                    <span>Python</span>
+
+                </div>
+
+                <a href="#"
+                   class="project-link">
+
+                    View Project
+                    <i class="fas fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
 
 </section>
 
-</main>
 
+<!-- ================= EDUCATION ================= -->
+
+<section id="education" class="section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>05</span>
+
+            <h2>Education</h2>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+                    2023 – Present
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        Tianjin University of Technology
+                    </h3>
+
+                    <h4>
+                        Master's Degree · Robotics
+                    </h4>
+
+                    <p>
+                        School of Mechanical Engineering
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+                    2019 – 2023
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        Tianjin University of Technology
+                    </h3>
+
+                    <h4>
+                        Bachelor's Degree · Robotics Engineering
+                    </h4>
+
+                    <p>
+                        Major in Robotics Engineering
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section class="section gray-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>06</span>
+
+            <h2>Technical Skills</h2>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+
+            <div class="skill">
+
+                <h3>
+                    Programming
+                </h3>
+
+                <p>
+                    Python · C++ · MATLAB
+                </p>
+
+            </div>
+
+
+            <div class="skill">
+
+                <h3>
+                    Deep Learning
+                </h3>
+
+                <p>
+                    PyTorch · Neural Networks
+                    · Representation Learning
+                </p>
+
+            </div>
+
+
+            <div class="skill">
+
+                <h3>
+                    Reinforcement Learning
+                </h3>
+
+                <p>
+                    PPO · Adversarial RL
+                    · Multi-Agent RL
+                </p>
+
+            </div>
+
+
+            <div class="skill">
+
+                <h3>
+                    Simulation
+                </h3>
+
+                <p>
+                    MetaDrive · Gymnasium
+                    · Autonomous Driving Simulation
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="section contact-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>07</span>
+
+            <h2>Contact</h2>
+
+        </div>
+
+
+        <div class="contact-content">
+
+            <p>
+
+                I am always interested in discussing
+                research, collaboration, and opportunities
+                in reinforcement learning, autonomous driving,
+                and robotics.
+
+            </p>
+
+
+            <div class="contact-links">
+
+                <a href="mailto:urcwsp@stud.tjut.edu.cn">
+
+                    <i class="fas fa-envelope"></i>
+
+                    urcwsp@stud.tjut.edu.cn
+
+                </a>
+
+
+                <a href="https://github.com/"
+                   target="_blank">
+
+                    <i class="fab fa-github"></i>
+
+                    GitHub
+
+                </a>
+
+
+                <a href="cv.pdf"
+                   target="_blank">
+
+                    <i class="fas fa-file-pdf"></i>
+
+                    Curriculum Vitae
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
-    <p>© 2026 Shaopu Wang</p>
+    <p>
+        © <span id="year"></span> Shaopu Wang.
+        All Rights Reserved.
+    </p>
 
 </footer>
 
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
+```
